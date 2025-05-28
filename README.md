@@ -21,7 +21,7 @@ This project is a **legal document AI assistant** built with Streamlit, LangChai
 - **Caching** of AI responses for faster repeat queries without repeated calls to the API.
 - **Session state management** to preserve uploaded files, document splits, embeddings, and chat history without reprocessing on page reloads.
 - **Clean, interactive UI** with sidebar controls and multi-column layout for previews, flowcharts, and results.
-
+  
 ---
 
 ## How It Works
