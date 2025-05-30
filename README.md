@@ -1,26 +1,25 @@
-# Legal Document AI Assistant
+# 🤖 NeuroDoc: Legal Document AI Assistant
 
-This project is a **legal document AI assistant** built with Streamlit, LangChain, and Azure OpenAI services. It allows users to upload PDF or TXT legal documents and perform various AI-powered actions such as extracting obligations, rights, responsibilities, license types, risks, compliance details, entity extraction, and interactive Q&A over the document content.
+NeuroDoc is an intelligent legal document analysis tool built with Streamlit, LangChain, and Azure OpenAI services. It allows users to upload PDF or TXT legal documents and perform various AI-powered actions such as extracting obligations, rights, responsibilities, license types, risks, compliance details, entity extraction, and interactive Q&A over the document content.
 
 ---
 
-## Features
+## 🚀 Features
 
-- **Upload legal documents** in PDF or TXT format.
-- **Preview uploaded documents** page by page with easy navigation.
-- **Multiple action modes** powered by Azure OpenAI LLM:
-  - Extract Entities
-  - Extract Obligations
-  - Extract Responsibilities
-  - Extract Rights
-  - Extract License Type
-  - Extract Risks
-  - Extract Compliance
-  - Chat with PDF (conversational Q&A)
-- **Vector-based document retrieval** for efficient similarity search in large documents.
-- **Caching** of AI responses for faster repeat queries without repeated calls to the API.
-- **Session state management** to preserve uploaded files, document splits, embeddings, and chat history without reprocessing on page reloads.
-- **Clean, interactive UI** with sidebar controls and multi-column layout for previews, flowcharts, and results.
+- 📄 Upload and preview legal documents (PDF/TXT)
+- ✂️ Split and embed content using Azure OpenAI
+- 🔍 Extract:
+  - Entities
+  - Obligations
+  - Responsibilities
+  - Rights
+  - License Types
+  - Risks
+  - Compliance Clauses
+- 💬 Chat with your document (retrieval-augmented QA)
+- 📈 View results in tables or expandable views
+- 💾 Export results as JSON/CSV
+- 📊 Visual agent workflow diagram
   
 ---
 
@@ -47,3 +46,43 @@ This project is a **legal document AI assistant** built with Streamlit, LangChai
 - **Local caching** — JSON files to store results for faster access.
 
 ---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Harsh-Jindal-web/NeuroDoc.git
+cd NeuroDoc
+```
+### 2. Create & Activate Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 4. Configure Azure OpenAI
+```bash
+You can also add .env support using python-dotenv.
+```
+### 5. Run the App
+```bash
+streamlit run app.py
+```
+
+Then open your browser to: http://localhost:8501
+
+## 🤔 How to contribute
+
+- Fork this repository;
+- Create a branch with your feature: `git checkout -b my-feature`;
+- Commit your changes: `git commit -m "feat: my new feature"`;
+- Push to your branch: `git push origin my-feature`.
+
+Once your pull request has been merged, you can delete your branch.
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
