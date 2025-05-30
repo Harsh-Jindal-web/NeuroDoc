@@ -1,0 +1,55 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+.env.*
+
+# Python environment variables and caches
+*.env
+*.env.*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Streamlit cache folder
+.streamlit/
+
+# Local caches and temp files/folders
+caches/
+faiss_cache/
+temp.*
+temp_doc.pdf
+
+# Python compiled files
+*.so
+*.pyd
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Miscellaneous
+*.bak
+*.swp
+*~
+
+# Ignore secrets/config files (optional, only if you use them)
+config.py
